@@ -1,33 +1,40 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-demo
+  name: flask-app
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
-      app: flask-demo
+      app: flask-app
+
   template:
     metadata:
       labels:
-        app: flask-demo
+        app: flask-app
+
     spec:
       containers:
-        - name: flask-demo
-          image: YOUR_DOCKERHUB_USERNAME/flask-k8s-demo:1.0.0
+        - name: flask-app
+          image: drexterdill/flask-k8s-demo:1.0.0
           ports:
             - containerPort: 5000
+
           env:
             - name: APP_VERSION
               value: "1.0.0"
             - name: APP_ENV
               value: "kubernetes"
+
           readinessProbe:
             httpGet:
               path: /health
               port: 5000
             initialDelaySeconds: 3
             periodSeconds: 5
+          
           livenessProbe:
             httpGet:
               path: /health

@@ -1,4 +1,2 @@
-venv/
 .git/
-__pycache__/
 .env
