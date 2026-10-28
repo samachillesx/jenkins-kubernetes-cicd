@@ -1,6 +1,6 @@
 pipeline {
     // agent any
-    agent { label 'wsl-ubuntu' }
+    agent { label 'wsl2-agent' }
 
     environment {
         IMAGE = 'drexterdill/flask-k8s-demo'
