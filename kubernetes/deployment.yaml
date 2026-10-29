@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: drexterdill/flask-k8s-demo:1.0.0
+          image: drexterdill/flask-k8s-demo
           ports:
             - containerPort: 5000
 
