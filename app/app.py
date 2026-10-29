@@ -27,7 +27,7 @@ from flask import Flask, jsonify, send_from_directory
 
 app = Flask(__name__)
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
 
 @app.get("/")
