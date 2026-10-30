@@ -18,15 +18,15 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: drexterdill/flask-k8s-demo
+          image: drexterdill/flask-k8s-demo:1.0.0
           ports:
             - containerPort: 5000
 
-          env:
-            - name: APP_VERSION
-              value: "1.0.0"
-            - name: APP_ENV
-              value: "kubernetes"
+          # env:
+          #   - name: APP_VERSION
+          #     value: "1.0.0"
+          #   - name: APP_ENV
+          #     value: "kubernetes"
 
           readinessProbe:
             httpGet:

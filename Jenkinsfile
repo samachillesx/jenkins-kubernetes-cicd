@@ -3,7 +3,7 @@ pipeline {
     agent { label 'wsl2-agent' }
 
     environment {
-        IMAGE = 'drexterdill/flask-k8s-demo'
+        IMAGE = 'drexterdill/flask-k8s-demo:1.0.0'
         DEPLOYMENT = 'flask-app'
         CONTAINER = 'flask-app'
     }
