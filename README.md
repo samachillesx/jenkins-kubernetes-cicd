@@ -2,6 +2,8 @@
 
 Automated build, test, containerization, image publishing, and Kubernetes deployment of a Flask application using Jenkins.
 
+![Live App](screenshots/_kubernetes-jenkins.gif)
+
 ## Project overview
 
 This project demonstrates how a code change can move from GitHub to a running Kubernetes workload through an automated Jenkins pipeline.
