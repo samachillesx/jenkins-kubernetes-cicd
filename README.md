@@ -4,6 +4,8 @@ Automated build, test, containerization, image publishing, and Kubernetes deploy
 
 ![Live App](screenshots/_kubernetes-jenkins.gif)
 
+![Jenkins Build](screenshots/jenkins-cicd.png)
+
 ## Project overview
 
 This project demonstrates how a code change can move from GitHub to a running Kubernetes workload through an automated Jenkins pipeline.
@@ -128,6 +130,8 @@ If your Service is configured as `NodePort`, you can also inspect its assigned n
 ```bash
 kubectl get service flask-service
 ```
+
+![Services](screenshots/services.png)
 
 ## Important implementation notes
 

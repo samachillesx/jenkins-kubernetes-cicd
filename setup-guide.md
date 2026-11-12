@@ -81,6 +81,7 @@ Run the image locally:
 ```bash
 docker run --rm -p 5000:5000 flask-k8s-demo:1.0.0
 ```
+![Docker Build](screenshots/docker-build.png)
 
 In another terminal, test the health endpoint:
 
@@ -111,6 +112,8 @@ Push it:
 ```bash
 docker push drexterdill/flask-k8s-demo:1.0.0
 ```
+
+![Docker Hub](screenshots/dockerhub.png)
 
 Verify that the repository and tag appear in Docker Hub. For a private Docker Hub repository, configure an appropriate Kubernetes image-pull secret; a public image can normally be pulled without one.
 
